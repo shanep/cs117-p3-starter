@@ -1,8 +1,12 @@
-# Project 3 - Loops
+# Project 3 - Statements, Expressions, and Loops
 
-You will write a program that outputs a downwards facing arrow composed of a
-rectangle and a right triangle. Arrow dimensions are defined by user specified
-arrow base height, arrow base width, and arrow head width.
+A power station is on one side of a river that is one-half mile wide, and a
+factory is eight miles downstream on the other side of the river.  It costs $7
+per foot to run power lines over land and $9 per foot to run them under water.
+Your objective is to determine the most economical path to lay the power line.
+That is, determine how long the power line should run under water and how long
+it should run over land to achieve the minimum total cost of laying the power
+line.
 
 ## Important Links
 
@@ -10,70 +14,70 @@ arrow base height, arrow base width, and arrow head width.
 
 ## Objectives
 
-- Use cin to read data from the user
-- Use cout to output to the standard output stream
-- Use if/else statements
-- Use loops
+- Creating abstract code.
+- Creating code that is easier to read and modify/maintain.
+  - Creating and using user defined functions.
+  - Using constants.
+- Formatting output.
 
 ## Task 1 - Write the program
 
-Step 1. Input the arrow base height (int) and width (int). Draw a
-rectangle using asterisks (height x width). Hint: use a nested loop in which the
-inner loop draws one row of *s, and the outer loop iterates a number of times
-equal to the height. Submit for grading to confirm two tests pass.
+Write a program that prompts the user to enter:
+
+- The distance of the factory downstream on the other side of the river. 
+- The width of the river.
+- The cost of laying the power line over land. 
+- The cost of laying the power line under water.
+
+The program then determines and outputs the length of the power line that should
+run under water and the length that should run over land so that the cost of
+constructing the power line is at the minimum.  The program should also output
+the total cost of constructing the power line. You can make the following
+assumptions:
+
+1. Move down the river in  ¼ mile (1320’) increments when determining the cost
+   of laying the cable.
+2. The power station and the factory are right next to the river.
+3. You can disregard the z axis (the depth of the cable) when determining the
+   cost.
+
+Your code should:
+
+- Create user defined functions whenever warranted/possible (remember, if you do
+  the identical set of calculations multiple times then you should use
+  functions). This project DOES necessitate functions.   Create the following
+  functions (at a minimum):
+  - computeDiag(double base, double height) - computes the ‘water’ distance ,the
+    diagonal of the triangle
+  - computeWaterCost(double length, double cost) - computes the water cost
+  - computeLandCost(double length, double cost) - computes the land cost
+- Use ‘constants’ when warranted.
+- Cable length should be displayed in miles to 4 decimal places.
+- Dollar amounts should be preceded by a dollar sign (‘$’) to 2 decimal places.
+
+Your output shall:
+
+- List the cable length going over land and its cost with an appropriately
+  written prompt that identifies what the length and cost represents.
+- List the cable length going across the river and its cost with an
+  appropriately written prompt that identifies what the length and cost
+  represents.
+- List the overall cost to lay the cable with an appropriately written prompt
+  that identifies what the cost represents.
+- The execution of your program should display the output below (text stated
+  should be exact):
 
 ```bash
-Ex: If input is:
+Enter the distance downstream to the factory in miles: 8
+Enter the width of the river in miles: .5
+Enter the dollar cost per foot to run power over land: 7
+Enter the dollar cost per foot to run power under water: 9
 
-6 4
-Sample output is:
+The most cost effective solution is:
 
-****
-****
-****
-****
-****
-****
-```
-
-Step 2. Input the arrow head width and draw a right triangle. Hint: use
-a nested loop. Submit for grading to confirm four tests pass.
-
-```bash
-Ex: If input is:
-
-4 3 4
-Sample output is:
-
-***
-***
-***
-***
-****
-***
-**
-*
-```
-
-Step 3. Modify the program to only accept an arrow head width that is larger
-than the arrow base width. Use a loop to continue inputting the arrow head width
-until the value is larger than the arrow base width. Submit for grading to
-confirm all tests pass.
-
-```bash
-Ex: If input is:
-
-4 3 3 2 4
-Sample output is:
-
-***
-***
-***
-***
-****
-***
-**
-*
+Lay power line across land for 7.2500 miles at a cost of $267960.00.
+Lay power line under water for 0.9014 miles at a cost of $42833.95.
+The total cost = $310793.95.
 ```
 
 ## Task 2 - Generate Build Files
