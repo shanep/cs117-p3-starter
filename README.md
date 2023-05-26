@@ -8,25 +8,28 @@ That is, determine how long the power line should run under water and how long
 it should run over land to achieve the minimum total cost of laying the power
 line.
 
+![powerstation](powerstation.png)
+
 ## Important Links
 
 - Review the [grading rubric](https://shanepanter.com/cs452/grading-rubric.html)
 
 ## Objectives
 
-- Creating abstract code.
 - Creating code that is easier to read and modify/maintain.
   - Creating and using user defined functions.
   - Using constants.
-- Formatting output.
+- Formatting output to a standard.
+- Use the Pythagorean theorem
+- Use loops, branches and expressions
 
 ## Task 1 - Write the program
 
 Write a program that prompts the user to enter:
 
-- The distance of the factory downstream on the other side of the river. 
+- The distance of the factory downstream on the other side of the river.
 - The width of the river.
-- The cost of laying the power line over land. 
+- The cost of laying the power line over land.
 - The cost of laying the power line under water.
 
 The program then determines and outputs the length of the power line that should
@@ -72,6 +75,39 @@ Enter the distance downstream to the factory in miles: 8
 Enter the width of the river in miles: .5
 Enter the dollar cost per foot to run power over land: 7
 Enter the dollar cost per foot to run power under water: 9
+Checking distance over water when land distance is 0.00 miles...380901.78
+Checking distance over water when land distance is 0.25 miles...378285.66
+Checking distance over water when land distance is 0.50 miles...375671.12
+Checking distance over water when land distance is 0.75 miles...373058.34
+Checking distance over water when land distance is 1.00 miles...370447.49
+Checking distance over water when land distance is 1.25 miles...367838.80
+Checking distance over water when land distance is 1.50 miles...365232.50
+Checking distance over water when land distance is 1.75 miles...362628.88
+Checking distance over water when land distance is 2.00 miles...360028.29
+Checking distance over water when land distance is 2.25 miles...357431.10
+Checking distance over water when land distance is 2.50 miles...354837.78
+Checking distance over water when land distance is 2.75 miles...352248.87
+Checking distance over water when land distance is 3.00 miles...349665.04
+Checking distance over water when land distance is 3.25 miles...347087.08
+Checking distance over water when land distance is 3.50 miles...344515.95
+Checking distance over water when land distance is 3.75 miles...341952.84
+Checking distance over water when land distance is 4.00 miles...339399.24
+Checking distance over water when land distance is 4.25 miles...336857.02
+Checking distance over water when land distance is 4.50 miles...334328.57
+Checking distance over water when land distance is 4.75 miles...331817.00
+Checking distance over water when land distance is 5.00 miles...329326.44
+Checking distance over water when land distance is 5.25 miles...326862.44
+Checking distance over water when land distance is 5.50 miles...324432.70
+Checking distance over water when land distance is 5.75 miles...322048.19
+Checking distance over water when land distance is 6.00 miles...319724.99
+Checking distance over water when land distance is 6.25 miles...317487.71
+Checking distance over water when land distance is 6.50 miles...315375.72
+Checking distance over water when land distance is 6.75 miles...313455.76
+Checking distance over water when land distance is 7.00 miles...311848.98
+Checking distance over water when land distance is 7.25 miles...310793.95
+Checking distance over water when land distance is 7.50 miles...310801.71
+Checking distance over water when land distance is 7.75 miles...313004.49
+
 
 The most cost effective solution is:
 
