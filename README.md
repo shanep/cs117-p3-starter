@@ -8,6 +8,11 @@ That is, determine how long the power line should run under water and how long
 it should run over land to achieve the minimum total cost of laying the power
 line.
 
+In general we want to solve this problem for given width of the river, distance
+to the factory, and cost of running power lines over land and water. Writing a
+program to solve this optimization problem allows us to use it in any possible
+scenario without having to recompute each time by hand 😃.
+
 ![powerstation](powerstation.png)
 
 ## Important Links
