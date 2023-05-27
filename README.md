@@ -144,11 +144,11 @@ Lay power line under water for 0.9014 miles at a cost of $42833.95
 The total cost = $310793.95.
 ```
 
-## Task 3 - Unit Testing
+## Task 3 - Testing
 
-Your instructor will provide you with unit testing scripts to help guide your
-development. These will be posted on canvas with instructions on how to add
-them to your project.
+Your instructor will provide you with testing scripts that were demonstrated in
+class to help guide your development. These will be posted in canvas along with
+instructions on how to use them in your project.
 
 ## Task 4 - Complete the Retrospective
 
