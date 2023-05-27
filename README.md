@@ -28,6 +28,29 @@ scenario without having to recompute each time by hand 😃.
 - Use the Pythagorean theorem
 - Use loops, branches and expressions
 
+## Task 0 - Generate Build Files
+
+There are two scripts in the root directory named `clean.sh` and `release.sh`.
+One creates a release build to compile your project and the other will delete
+all the temporary files that are created during the build process.
+
+Run the `release.sh` script from the terminal to setup your project. Note
+that your output will be slightly different than what is shown below because
+cmake configures the build system specific to the system that it is running on.
+
+```bash
+shane|(master *%=):solution$ ./release.sh
+-- The CXX compiler identification is AppleClang 14.0.3.14030022
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: ...
+```
+
 ## Task 1 - Write the program
 
 Write a program that prompts the user to enter:
@@ -116,53 +139,12 @@ Checking distance over water when land distance is 7.75 miles...313004.49
 
 The most cost effective solution is:
 
-Lay power line across land for 7.2500 miles at a cost of $267960.00.
-Lay power line under water for 0.9014 miles at a cost of $42833.95.
+Lay power line across land for 7.2500 miles at a cost of $267960.00
+Lay power line under water for 0.9014 miles at a cost of $42833.95
 The total cost = $310793.95.
 ```
 
-## Task 2 - Generate Build Files
-
-There are two scripts in the root directory named `clean.sh` and `release.sh`.
-One creates a release build to compile your project and the other will delete
-all the temporary files that are created during the build process.
-
-Run the `release.sh` script from the terminal to setup your project. Note
-that your output will be slightly different than what is shown below because
-cmake configures the build system specific to the system that it is running on.
-
-```bash
-shane|(master *%=):solution$ ./release.sh
--- The CXX compiler identification is AppleClang 14.0.3.14030022
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Configuring done
--- Generating done
--- Build files have been written to: ...
-```
-
-## Task 3 - Compile your code
-
-After you have run `release.sh` you can `cd` into the build directory to compile
-and run the program.
-
-```bash
-shane|(master *%=):build$ make
-[ 50%] Building CXX object src/CMakeFiles/myprogram.dir/solution.cpp.o
-[100%] Linking CXX executable ../myprogram
-[100%] Built target myprogram
-```
-
-If your code that you wrote in task 1 was correct you should see a executable
-named `myprogram` that you can now run to see the output. If your program did
-not compile you will need to return to task 1 and fix your code and then return
-to this task to compile your code again. You only need to run the `release.sh`
-script once if you are recompiling you can skip Task 2 above.
-
-## Task 4 - Complete the Retrospective
+## Task 2 - Complete the Retrospective
 
 Once you have completed all the tasks open the file **Retrospective.md** and
 complete each section that has a TODO label.
@@ -182,7 +164,7 @@ For the **Sources used** section you must detail any sources you used outside of
 the textbook or course website. If you write NONE in this section it is assumed
 that you didn't use google at all. Be safe CITE!
 
-## Task 5 - Add, Commit, Push your code
+## Task 3 - Add, Commit, Push your code
 
 Once you are finished you need to make sure that you have pushed all your code
 to GitHub for grading! You will not be submitting anything to canvas everything
