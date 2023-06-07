@@ -17,7 +17,7 @@ scenario without having to recompute each time by hand 😃.
 
 ## Important Links
 
-- Review the [grading rubric](https://shanepanter.com/cs452/grading-rubric.html)
+- Review the [grading rubric](https://shanepanter.com/cs117/grading-rubric.html)
 
 ## Objectives
 
