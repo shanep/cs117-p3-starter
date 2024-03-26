@@ -15,10 +15,6 @@ scenario without having to recompute each time by hand 😃.
 
 ![powerstation](powerstation.png)
 
-## Important Links
-
-- Review the [grading rubric](https://shanepanter.com/cs117/grading-rubric.html)
-
 ## Objectives
 
 - Creating code that is easier to read and modify/maintain.
